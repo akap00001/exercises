@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lommeregner</title>
+    <script src="js.js" defer></script>
+
+    <!-- style hvis du får tid -->
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+      }
+      input {
+        font-size: 18px;
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <p>1. tal</p>
+    <input type="number" id="tal1" />
+
+    <p>Vælg regneart</p>
+    <select id="regneart">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+
+    <p>2. tal</p>
+    <input type="number" id="tal2" />
+
+    <br />
+    <br />
+    <button id="beregn">Beregn</button>
+
+    <p>Resultat</p>
+    <input id="resultat" />
+  </body>
+</html>
