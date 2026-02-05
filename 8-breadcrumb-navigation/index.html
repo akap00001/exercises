@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breadcrumbs</title>
+    <script src="js.js" defer></script>
+
+    <style>
+      #katergori {
+        display: flex;
+        gap: 5px;
+      }
+
+      #kategori a {
+        margin-left: 5px;
+      }
+
+      #kategori a::after {
+        content: "/";
+        margin-left: 6px;
+        color: #000;
+      }
+
+      /* fjern skråstreg efter sidste link */
+      #kategori a:last-child::after {
+        content: "";
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Breadcrumbs generator</h2>
+
+    <nav id="kategori">
+      <a href=""></a>
+
+      <!-- <ul > 
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul> -->
+    </nav>
+
+    <br />
+    <button id="generateBtn">Generate breadcrumbs</button>
+  </body>
+</html>
