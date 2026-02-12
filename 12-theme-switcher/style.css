@@ -1,0 +1,10 @@
+[body = light] {
+    color: beige;
+    
+}
+
+h1 {
+    font-size: 50px;
+    font-style: italic;
+    color: rgb(132, 102, 65);
+}
